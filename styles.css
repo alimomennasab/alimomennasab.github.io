@@ -4,13 +4,27 @@
   align-items: center;
 }
 
-.row {
-  display: flex;
+#centeredDiv {
+  text-align: center;
 }
 
-.column {
-  flex: 50%;
-  text-align: center;
+#backgroundStyling{
+    background-color: #90EE90;
+}
+
+.paddingDiv {
+  padding: 20px;
+}
+
+#listStyling {
+  padding: 0px;
+  list-style-position: inside;
   font-size: 24px;
-  text-decoration: underline;
+  display: inline-block;
+  text-align: left;
+}
+
+h1 {
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
 }
