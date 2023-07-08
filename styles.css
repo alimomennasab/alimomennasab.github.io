@@ -9,7 +9,8 @@
 }
 
 #backgroundStyling {
-  background-color: #90ee90;
+    background: linear-gradient(to right, #94bbe9, #eeaeca);
+    /**background-color: #c2ccff;**/
 }
 
 .paddingDiv {
