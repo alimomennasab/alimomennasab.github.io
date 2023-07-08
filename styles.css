@@ -21,6 +21,10 @@
   color: black;
 }
 
+.linkStyling:hover{
+    color: white;
+}
+
 #listStyling {
   padding: 0px;
   list-style-position: inside;
