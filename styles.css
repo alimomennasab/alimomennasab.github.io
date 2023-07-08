@@ -9,16 +9,16 @@
 }
 
 #backgroundStyling {
-    background: linear-gradient(to right, #94bbe9, #eeaeca);
-    /**background-color: #c2ccff;**/
+  background: linear-gradient(to right, #94bbe9, #eeaeca);
+  /**background-color: #c2ccff;**/
 }
 
 .paddingDiv {
   padding: 15px;
 }
 
-.linkStyling{
-    color:black;
+.linkStyling {
+  color: black;
 }
 
 #listStyling {
