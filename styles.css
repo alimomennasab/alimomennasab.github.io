@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: navy;
 }
 
 #centeredDiv {
@@ -9,8 +10,8 @@
 }
 
 #backgroundStyling {
-  background: linear-gradient(to right, #94bbe9, #eeaeca);
-  /**background-color: #c2ccff;**/
+  /**background: linear-gradient(to right, #94bbe9, #eeaeca);**/
+  background-color: #F8F8F8;
 }
 
 .paddingDiv {
@@ -22,7 +23,8 @@
 }
 
 .linkStyling:hover{
-    color: white;
+    color: #647eea;
+    ;
 }
 
 #listStyling {
@@ -35,11 +37,19 @@
 
 h1 {
   font-size: 28px;
-  font-family: 'Roboto', sans-serif;
-}
+  /**font-family: 'Roboto', sans-serif;**/
+  font-family:Georgia, serif; font-weight: lighter}
 
 .link-container {
   display: flex;
   display: flex;
   justify-content: space-between;
+}
+
+li{
+  color: #404040	;
+}
+
+h1{
+  color: #647eea;
 }
