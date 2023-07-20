@@ -11,7 +11,8 @@
 
 #backgroundStyling {
   /**background: linear-gradient(to right, #94bbe9, #eeaeca);**/
-  background-color: #F8F8F8;
+  background-color: #c2e1fc;
+  /**e1fbe3**/
 }
 
 .paddingDiv {
@@ -30,13 +31,13 @@
 #listStyling {
   padding: 0px;
   list-style-position: inside;
-  font-size: 24px;
+  font-size: 22px;
   display: inline-block;
   text-align: left;
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 26px;
   /**font-family: 'Roboto', sans-serif;**/
   font-family:Georgia, serif; font-weight: lighter}
 
