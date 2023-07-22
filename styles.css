@@ -54,11 +54,13 @@ h1 {
 
 li{
   color: #404040	;
+  padding-top: 0%;
 }
 
 h1{
   /**color: #647eea;**/
   color: #3670c9;
+  padding-bottom: 0%;
 }
 
 img{
