@@ -36,14 +36,14 @@
   display: inline-block;
   text-align: left;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 350;
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 28px;
   /**font-family: 'Roboto', sans-serif;**/
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 350;
 }
 
 .link-container {
