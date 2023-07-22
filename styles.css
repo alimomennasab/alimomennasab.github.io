@@ -11,7 +11,7 @@
 
 #backgroundStyling {
   /**background: linear-gradient(to right, #94bbe9, #eeaeca);**/
-  background-color: #d6e4ea;
+  background-color: #edf3f5;
   /**e1fbe3**/
 }
 
@@ -35,12 +35,16 @@
   font-size: 22px;
   display: inline-block;
   text-align: left;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
 }
 
 h1 {
   font-size: 26px;
   /**font-family: 'Roboto', sans-serif;**/
-  font-family:Georgia, serif; font-weight: lighter}
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
+}
 
 .link-container {
   display: flex;
