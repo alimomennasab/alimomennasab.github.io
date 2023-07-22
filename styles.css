@@ -11,7 +11,7 @@
 
 #backgroundStyling {
   /**background: linear-gradient(to right, #94bbe9, #eeaeca);**/
-  background-color: #c2e1fc;
+  background-color: #d6e4ea;
   /**e1fbe3**/
 }
 
@@ -24,7 +24,8 @@
 }
 
 .linkStyling:hover{
-    color: #647eea;
+    /**color: #647eea;**/
+    color: #3670c9;
     ;
 }
 
@@ -52,7 +53,8 @@ li{
 }
 
 h1{
-  color: #647eea;
+  /**color: #647eea;**/
+  color: #3670c9;
 }
 
 img{
