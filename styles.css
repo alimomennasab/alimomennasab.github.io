@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: navy;
+  color: #9292dd;
 }
 
 #centeredDiv {
@@ -11,7 +11,7 @@
 
 #backgroundStyling {
   /**background: linear-gradient(to right, #94bbe9, #eeaeca);**/
-  background-color: #edf3f5;
+  background-color: #000000;
   /**e1fbe3**/
 }
 
@@ -20,13 +20,12 @@
 }
  
 .linkStyling {
-  color: black;
+  color: #676666;
 }
 
 .linkStyling:hover{
     /**color: #647eea;**/
-    color: #3670c9;
-    ;
+    color: #9292dd;
 }
 
 #listStyling {
@@ -53,13 +52,13 @@ h1 {
 }
 
 li{
-  color: #404040	;
+  color: #676666	;
   padding-top: 0%;
 }
 
 h1{
   /**color: #647eea;**/
-  color: #3670c9;
+  color: #9292dd;
   padding-bottom: 0%;
 }
 
