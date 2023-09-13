@@ -5,3 +5,4 @@ TODO:
 2. Add links to Cal Poly Pomona (link to BroncoDirectMe) and the Cardiac Vision Lab - maybe with a cool highlight effect??
 3. Add projects section
  
+ 
