@@ -6,4 +6,4 @@ TODO:
 3. Add projects section
  
  
-Fix homepage not updating
+Fix homepage not updating 
