@@ -1,24 +1,32 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
     <div className="h-screen w-screen bg-amber-50 flex items-center justify-center">
-      <div className="flex flex-row justify-between p-4 w-4/6 h-4/6">
+      <div className="bg bg-amber-50 flex flex-row justify-between p-4 w-4/6 h-4/6">
 
         {/* SIDEBAR */}
         <div className="flex flex-col w-3/10 justify-start items-end border-r border-black pr-14">
           <h1 className="text-green-600 font-bold text-3xl text-right p-1"> Ali Momennasab </h1>
-          <h1 className="text-green-600 font-light text-xl text-right p-1"> Projects </h1>
-          <h1 className="text-green-600 font-light text-xl text-right p-1"> Photos </h1>
-          <h1 className="text-green-600 font-light text-xl text-right p-1"> Resume </h1>
-          <div className="relative w-full aspect-square mt-4 border border-black overflow-hidden">
+          <Link href="/projects" className="text-green-600 font-light text-xl text-right p-1 hover:font-bold">
+            Projects
+          </Link>
+          <Link href="/photos" className="text-green-600 font-light text-xl text-right p-1 hover:font-bold">
+            Photos
+          </Link>
+          <Link href="/resume" className="text-green-600 font-light text-xl text-right p-1 hover:font-bold">
+            Resume
+          </Link>
+          <div className="rounded-full relative w-full aspect-square mt-4 overflow-hidden">
             <Image
               src="/personal_image.png"
               alt="Personal Image"
               layout="fill"
               objectFit="cover"
               sizes="(max-width: 768px) 100vw, 33vw"
+              className=''
             />
           </div>
         </div>
@@ -40,7 +48,7 @@ export default function Home() {
           <h1 className="text-black font-bold text-2xl mt-8 mb-4">
             Find Me @
           </h1>
-          <div className="flex flex-row justify-between w-4/6 mb-4">
+          <div className="flex flex-row justify-between w-1/2 mb-4">
             <a 
               href="https://github.com/alimomennasab" 
               target="_blank" 
