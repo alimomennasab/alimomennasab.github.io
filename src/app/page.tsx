@@ -22,6 +22,7 @@ export default function Home() {
             />
           </div>
         </div>
+        
         {/* MAIN TEXT */}
         <div className="flex flex-col justify-start w-3/5">
           <h1 className="text-black text-lg">
@@ -38,10 +39,30 @@ export default function Home() {
             Find Me @
           </h1>
           <div className="flex flex-row justify-between w-4/6 mb-4">
-            <h1 className="text-green-600 text-lg"> Github </h1>
-            <h1 className="text-green-600 text-lg"> Linkedin </h1>
-            <h1 className="text-green-600 text-lg"> Twitter </h1>
-            <h1 className="text-green-600 text-lg"> Instagram </h1>
+            <a 
+              href="https://github.com/alimomennasab" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-green-600 text-lg hover:underline"
+            >
+              Github
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/amomennasab/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-green-600 text-lg hover:underline"
+            >
+              Linkedin
+            </a>
+            <a 
+              href="https://x.com/momennasabali" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-green-600 text-lg hover:underline"
+            >
+              Twitter
+            </a>
           </div>
 
           {/* CURRENTLY */}
