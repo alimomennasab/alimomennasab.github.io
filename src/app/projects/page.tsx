@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Sidebar from '../components/sidebar';
 
 const projects = [
   {
@@ -33,27 +34,7 @@ export default function ProjectsPage() {
     <div className="h-screen w-screen bg-amber-50 flex items-center justify-center">
       <div className="flex flex-row justify-between p-4 w-4/6 h-4/6">
         {/* SIDEBAR */}
-        <div className="flex flex-col w-3/10 justify-start items-end border-r border-black pr-14">
-          <h1 className="text-green-600 font-bold text-3xl text-right p-1"> Ali Momennasab </h1>
-          <Link href="/projects" className="text-green-600 font-light text-xl text-right p-1 hover:font-bold">
-            Projects
-          </Link>
-          <Link href="/photos" className="text-green-600 font-light text-xl text-right p-1 hover:font-bold">
-            Photos
-          </Link>
-          <Link href="/resume" className="text-green-600 font-light text-xl text-right p-1 hover:font-bold">
-            Resume
-          </Link>
-          <div className="rounded-full relative w-full aspect-square mt-4 overflow-hidden">
-            <Image
-              src="/personal_image.png"
-              alt="Personal Image"
-              layout="fill"
-              objectFit="cover"
-              sizes="(max-width: 768px) 100vw, 33vw"
-            />
-          </div>
-        </div>
+        <Sidebar imageUrl="/personal_image.png" />
 
         {/* MAIN CONTENT */}
         <div className="flex flex-col justify-start w-3/5">
