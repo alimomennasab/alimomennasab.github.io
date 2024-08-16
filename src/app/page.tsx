@@ -9,14 +9,20 @@ export default function Home() {
       <div className="bg bg-amber-50 flex flex-row justify-between p-4 w-4/6 h-4/6">
 
         {/* SIDEBAR */}
-        <Sidebar imageUrl="/personal_image.png" />
+        <Sidebar imageUrl="/images/personal_image.png" />
 
         {/* MAIN TEXT */}
         <div className="flex flex-col justify-start w-3/5">
           <h1 className="text-black text-lg">
             Hi! I'm a third-year computer science major attending Cal Poly Pomona.
-            I'm interested in web development and deep learning. Check out what I've worked on in my 
-            <span className="text-green-500"> Projects </span> 
+            I'm interested in web development and deep learning. Check out what I've worked on in my
+            <span>&nbsp;</span>
+            <span>
+              <Link href="/projects" className="text-green-600 hover:underline">
+                Projects
+              </Link>
+            </span>
+            <span>&nbsp;</span>
             page!
           </h1>
 

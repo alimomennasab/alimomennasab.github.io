@@ -34,7 +34,7 @@ export default function ProjectsPage() {
     <div className="h-screen w-screen bg-amber-50 flex items-center justify-center">
       <div className="flex flex-row justify-between p-4 w-4/6 h-4/6">
         {/* SIDEBAR */}
-        <Sidebar imageUrl="/personal_image.png" />
+        <Sidebar imageUrl="/images/projects_image.png" />
 
         {/* MAIN CONTENT */}
         <div className="flex flex-col justify-start w-3/5">

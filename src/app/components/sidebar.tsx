@@ -23,13 +23,13 @@ const Sidebar: React.FC<SidebarProps> = ({ imageUrl }) => {
         Resume
       </Link>
       <div className="rounded-full relative w-full aspect-square mt-4 overflow-hidden">
-        <Image
-          src={imageUrl}
-          alt="image"
-          layout="fill"
-          objectFit="cover"
-          sizes="(max-width: 768px) 100vw, 33vw"
-        />
+      <Image
+        src={imageUrl}
+        alt="image"
+        fill
+        style={{ objectFit: 'cover' }}
+        sizes="(max-width: 768px) 100vw, 33vw"
+      />
       </div>
     </div>
   );
