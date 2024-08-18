@@ -34,9 +34,11 @@ export default function ProjectsPage() {
     <div className="h-screen w-screen bg-amber-50 flex items-center justify-center">
       <div className="flex flex-row justify-between p-4 w-4/6 h-4/6">
         <Sidebar imageUrl="/images/projects_image.png" />
-        <div className="flex flex-col justify-start w-3/5">
+
+        {/* MAIN CONTENT */}
+        <div className="flex flex-col justify-start w-3/5 overflow-hidden">
           <h2 className="text-3xl font-bold mb-4 ml-8">My Projects</h2>
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-6 overflow-y-auto">
             {projects.map((project, index) => (
               <div key={index} className="flex flex-col items-center">
                 <div className="w-3/4">

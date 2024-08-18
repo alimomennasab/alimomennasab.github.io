@@ -65,7 +65,7 @@ export default function Home() {
             Currently
           </h1>
           <h1 className="text-black text-lg"> - researching at the Cardiac Vision Lab at UCSF </h1>
-          <h1 className="text-black text-lg"> - looking for software engineering/deep learning roles for Fall 2024 & Spring 2025</h1>
+          <h1 className="text-black text-lg"> - looking for software engineering/deep learning roles for Fall 2024, Winter 2024/25, and Spring 2025</h1>
 
         </div>
       </div>

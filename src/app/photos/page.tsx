@@ -17,6 +17,8 @@ export default function PhotosPage() {
     <div className="h-screen w-screen bg-amber-50 flex items-center justify-center">
       <div className="flex flex-row justify-between p-4 w-4/6 h-4/6">
         <Sidebar imageUrl="/images/photospagepic.jpeg" />
+
+        {/* MAIN CONTENT */}
         <div className="flex flex-col justify-start w-3/5 overflow-hidden">
           <h2 className="text-3xl font-bold mb-4">My Photos 📸</h2>
           <div className="overflow-y-auto pr-4">
