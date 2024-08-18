@@ -7,7 +7,7 @@ const photos = [
 ];
 
 const titles = [
-  'El Dorado Beach, 2022', 'El Dorado Beach, 2022', 'Lake Arrowhead, 2023',
+  'El Matador Beach, 2022', 'El Matador Beach, 2022', 'Lake Arrowhead, 2023',
   'Berkeley, 2023', 'Mt. Fuji, 2023', 'Kyoto, 2023',
   'Alcatraz Island, 2024', 'Berkeley, 2024'
 ];

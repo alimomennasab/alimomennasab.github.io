@@ -18,5 +18,9 @@
 
 body {
   font-family: 'NotoSans', sans-serif;
+  @apply bg-amber-50 min-h-screen;
 }
 
+html, body {
+  @apply h-full;
+}
