@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 import Sidebar from "../components/sidebar";
 
@@ -20,7 +21,8 @@ export default function PhotosPage() {
 
         {/* MAIN CONTENT */}
         <div className="flex flex-col justify-start w-3/5 overflow-hidden">
-          <h2 className="text-3xl font-bold mb-4">My Photos 📸</h2>
+          <h1 className="text-3xl font-bold">Photos 📸</h1>
+          <h1 className="italic text-lg text-green-600 mb-4"> my favorite pics I've taken </h1>
           <div className="overflow-y-auto pr-4">
             <div className="grid grid-cols-2 gap-6">
               {photos.map((photo, index) => (
