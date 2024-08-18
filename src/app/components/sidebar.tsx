@@ -1,4 +1,4 @@
-import Image from 'next/image';
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 
 type SidebarProps = {
@@ -19,17 +19,15 @@ const Sidebar: React.FC<SidebarProps> = ({ imageUrl }) => {
       <Link href="/photos" className="text-green-600 font-light text-xl text-right p-1 hover:font-bold">
         Photos
       </Link>
-      <Link href="/resume" className="text-green-600 font-light text-xl text-right p-1 hover:font-bold">
+      <Link href="/Ali_Momennasab_resume.pdf" className="text-green-600 font-light text-xl text-right p-1 hover:font-bold">
         Resume
       </Link>
-      <div className="rounded-full relative w-full aspect-square mt-4 overflow-hidden">
-      <Image
-        src={imageUrl}
-        alt="image"
-        fill
-        style={{ objectFit: 'cover' }}
-        sizes="(max-width: 768px) 100vw, 33vw"
-      />
+      <div className="relative w-full pt-[100%] mt-4 rounded-full overflow-hidden">
+        <img
+          src={imageUrl}
+          alt="Profile"
+          className="absolute top-0 left-0 w-full h-full object-cover rounded-full"
+        />
       </div>
     </div>
   );

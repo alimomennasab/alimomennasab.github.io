@@ -1,4 +1,4 @@
-import Image from 'next/image';
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import Sidebar from '../components/sidebar';
 
@@ -33,10 +33,7 @@ export default function ProjectsPage() {
   return (
     <div className="h-screen w-screen bg-amber-50 flex items-center justify-center">
       <div className="flex flex-row justify-between p-4 w-4/6 h-4/6">
-        {/* SIDEBAR */}
         <Sidebar imageUrl="/images/projects_image.png" />
-
-        {/* MAIN CONTENT */}
         <div className="flex flex-col justify-start w-3/5">
           <h2 className="text-3xl font-bold mb-4 ml-8">My Projects</h2>
           <div className="grid grid-cols-2 gap-6">
@@ -49,12 +46,11 @@ export default function ProjectsPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <div className="relative aspect-square">
-                      <Image
+                    <div className="relative pt-[100%]">
+                      <img
                         src={project.image}
                         alt={project.title}
-                        layout="fill"
-                        objectFit="cover"
+                        className="absolute top-0 left-0 w-full h-full object-cover"
                       />
                     </div>
                   </Link>
