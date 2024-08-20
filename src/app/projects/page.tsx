@@ -31,36 +31,37 @@ const projects = [
 
 export default function ProjectsPage() {
   return (
-    <div className="h-screen w-screen bg-amber-50 flex items-center justify-center">
-      <div className="flex flex-row justify-between p-4 w-4/6 h-4/6">
+    <div className="min-h-screen w-screen bg-amber-50 flex items-center justify-center p-4">
+      <div className="bg-amber-50 flex flex-col md:flex-row justify-between p-4 w-full max-w-4xl h-auto md:h-[600px]">
         <Sidebar imageUrl="/images/projects_image.png" />
-
         {/* MAIN CONTENT */}
-        <div className="flex flex-col justify-start w-3/5 overflow-hidden">
-          <h2 className="text-3xl font-bold mb-4 ml-8">My Projects</h2>
-          <div className="grid grid-cols-2 gap-6 overflow-y-auto">
-            {projects.map((project, index) => (
-              <div key={index} className="flex flex-col items-center">
-                <div className="w-3/4">
-                  <Link
-                    href={project.link}
-                    className="block border border-black bg-white rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <div className="relative pt-[100%]">
-                      <img
-                        src={project.image}
-                        alt={project.title}
-                        className="absolute top-0 left-0 w-full h-full object-cover"
-                      />
-                    </div>
-                  </Link>
-                  <h3 className="text-md font-semibold text-black mt-2">{project.title}</h3>
-                  <p className="text-sm text-gray-600">{project.description}</p>
+        <div className="flex flex-col justify-start w-full md:w-3/5 overflow-hidden mt-4 md:mt-0">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">My Projects</h2>
+          <div className="overflow-y-auto pr-4 h-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {projects.map((project, index) => (
+                <div key={index} className="flex flex-col items-center">
+                  <div className="w-full">
+                    <Link
+                      href={project.link}
+                      className="block border border-black bg-white rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="relative pt-[100%]">
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          className="absolute top-0 left-0 w-full h-full object-cover"
+                        />
+                      </div>
+                    </Link>
+                    <h3 className="text-sm md:text-md font-semibold text-black mt-2">{project.title}</h3>
+                    <p className="text-xs md:text-sm text-gray-600">{project.description}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

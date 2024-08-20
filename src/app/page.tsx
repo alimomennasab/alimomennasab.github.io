@@ -5,12 +5,12 @@ import Sidebar from './components/sidebar';
 export default function Home() {
   return (
     <div className="min-h-screen w-screen bg-amber-50 flex items-center justify-center p-4">
-      <div className="bg-amber-50 flex flex-col md:flex-row justify-between w-full max-w-4xl">
+      <div className="bg-amber-50 flex flex-col md:flex-row justify-between p-4 w-full max-w-4xl h-auto md:h-[600px] ">
         {/* SIDEBAR */}
         <Sidebar imageUrl="/images/personal_image.png" />
         {/* MAIN TEXT */}
-        <div className="flex flex-col justify-start w-full md:w-3/5 mt-8 md:mt-0">
-          <h1 className="text-black text-base md:text-lg">
+        <div className="flex flex-col justify-start w-full md:w-3/5 overflow-hidden mt-4 md:mt-0">
+          <h1 className="text-black text-base md:text-lg mb-4">
             Hi! I'm a third-year computer science major attending Cal Poly Pomona.
             I'm interested in web development and deep learning. Check out what I've worked on in my
             <span>&nbsp;</span>
@@ -23,14 +23,14 @@ export default function Home() {
             page!
           </h1>
           {/* LINKS */}
-          <h1 className="text-black text-base md:text-lg mt-6 md:mt-8">
+          <h1 className="text-black text-base md:text-lg mb-2">
             Reach out anytime at <span className="font-bold">amomennasab (at) cpp (dot) edu</span>.
           </h1>
-          <h1 className="text-black text-base md:text-lg"> otherwise, </h1>
-          <h1 className="text-black font-bold text-xl md:text-2xl mt-6 md:mt-8 mb-3 md:mb-4">
+          <h1 className="text-black text-base md:text-lg mb-4"> otherwise, </h1>
+          <h1 className="text-black font-bold text-xl md:text-2xl mb-2">
             Find Me @
           </h1>
-          <div className="flex flex-row justify-between w-full md:w-1/2 mb-3 md:mb-4">
+          <div className="flex flex-row justify-between w-full md:w-1/2 mb-4">
             <a
               href="https://github.com/alimomennasab"
               target="_blank"
@@ -57,7 +57,7 @@ export default function Home() {
             </a>
           </div>
           {/* CURRENTLY */}
-          <h1 className="text-black font-bold text-xl md:text-2xl mt-3 md:mt-4 mb-3 md:mb-4">
+          <h1 className="text-black font-bold text-xl md:text-2xl mb-2">
             Currently
           </h1>
           <h1 className="text-black text-base md:text-lg"> - researching at the Cardiac Vision Lab at UCSF </h1>
