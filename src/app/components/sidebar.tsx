@@ -19,7 +19,7 @@ const Sidebar: React.FC<SidebarProps> = ({ imageUrl }) => {
       <Link href="/photos" className="text-green-600 font-light text-xl text-right p-1 hover:font-bold">
         Photos
       </Link>
-      <Link href="/Ali_Momennasab_resume.pdf" className="text-green-600 font-light text-xl text-right p-1 hover:font-bold">
+      <Link href="/Ali_Momennasab_resume3.pdf" className="text-green-600 font-light text-xl text-right p-1 hover:font-bold">
         Resume
       </Link>
       <div className="relative w-full pt-[100%] mt-4 rounded-full overflow-hidden">
