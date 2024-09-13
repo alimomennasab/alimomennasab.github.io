@@ -20,7 +20,9 @@ export default function PhotosPage() {
         <Sidebar imageUrl="/images/photospagepic.jpeg" />
         {/* MAIN CONTENT */}
         <div className="flex flex-col justify-start w-full md:w-3/5 overflow-hidden mt-4 md:mt-0">
-          <h1 className="text-2xl md:text-3xl font-bold">Photos &#x1F4F8;</h1>
+          <h1 className="text-2xl md:text-3xl font-bold">
+            Photos <span className="font-normal">📸</span>
+          </h1>
           <h2 className="italic text-base md:text-lg text-green-600 mb-4"> my favorite pics I've taken </h2>
           <div className="overflow-y-auto pr-4 h-full">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
