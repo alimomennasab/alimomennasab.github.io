@@ -7,7 +7,7 @@ export default function Home() {
     <div className="min-h-screen w-screen bg-amber-50 flex items-center justify-center p-4">
       <div className="bg-amber-50 flex flex-col md:flex-row justify-between p-4 w-full max-w-4xl h-auto md:h-[600px] ">
         {/* SIDEBAR */}
-        <Sidebar imageUrl="/images/personal_image.png" />
+        <Sidebar imageUrl="/images/personal_image.jpg" />
         {/* MAIN TEXT */}
         <div className="flex flex-col justify-start w-full md:w-3/5 overflow-hidden mt-4 md:mt-0">
           <h1 className="text-black text-base md:text-lg mb-4">
