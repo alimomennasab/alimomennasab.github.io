@@ -27,7 +27,7 @@ export default function PhotosPage() {
                 <div key={index} className="flex flex-col">
                   <div className="relative pt-[100%] mb-2">
                     <img
-                      src={`/images/photospage/${photo}`}
+                      src={`/images/${photo}`}
                       alt={titles[index]}
                       className="absolute top-0 left-0 w-full h-full object-cover"
                     />
