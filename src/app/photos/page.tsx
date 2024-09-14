@@ -3,14 +3,13 @@
 import Sidebar from "../components/sidebar";
 
 const photos = [
-  'beach1.JPG', 'beach2.JPG', 'arrowhead.JPG',
-  'berkeley1.JPG', 'fuji.JPG', 'kyoto.JPG', 'alcatraz.JPG', 'berkeley2.JPG',
+  'berkeley2.jpg', 'alcatraz.jpg', 'kyoto.jpg', 'fuji.jpg',
+  'berkeley1.jpg', 'arrowhead.jpg', 'beach2.jpg', 'beach1.jpg'
 ];
 
 const titles = [
-  'El Matador Beach, 2022', 'El Matador Beach, 2022', 'Lake Arrowhead, 2023',
-  'Berkeley, 2023', 'Mt. Fuji, 2023', 'Kyoto, 2023',
-  'Alcatraz Island, 2024', 'Berkeley, 2024'
+  'Berkeley, 2024', 'Alcatraz Island, 2024', 'Kyoto, 2023', 'Mt. Fuji, 2023',
+  'Berkeley, 2023', 'Lake Arrowhead, 2023', 'El Matador Beach, 2022', 'El Matador Beach, 2022'
 ];
 
 export default function PhotosPage() {
@@ -20,9 +19,7 @@ export default function PhotosPage() {
         <Sidebar imageUrl="/images/photospagepic.jpeg" />
         {/* MAIN CONTENT */}
         <div className="flex flex-col justify-start w-full md:w-3/5 overflow-hidden mt-4 md:mt-0">
-          <h1 className="text-2xl md:text-3xl font-bold">
-            Photos <span className="font-normal">📸</span>
-          </h1>
+          <h1 className="text-2xl md:text-3xl font-bold"> Photos </h1>
           <h2 className="italic text-base md:text-lg text-green-600 mb-4"> my favorite pics I've taken </h2>
           <div className="overflow-y-auto pr-4 h-full">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
