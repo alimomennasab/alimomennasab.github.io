@@ -5,20 +5,26 @@ import Sidebar from '../components/sidebar'
 const projects = [
   {
     title: 'Research',
-    description: 'In Progress 🚧',
+    description: 'Generating synthetic ultrasound data with Matlab',
     link: 'https://cardiacvision.ucsf.edu',
     image: '/images/heart.png',
   },
   {
+    title: 'Undergraduate Seminar',
+    description: 'ResNet-50 Leaf Classification',
+    link: 'https://github.com/alimomennasab/CS4630',
+    image: '/images/leafproject.png',
+  },
+  {
     title: 'NFL Mock Draft Sim',
-    description: 'A free NFL mock draft simulator.',
+    description: 'An NFL mock draft simulator for the 2025 draft class.',
     link: 'https://nfl-mock-draft.vercel.app',
     image: '/images/nflmockimage.jpeg',
   },
   {
     title: 'BroncoDirectMe',
     description:
-      "Professor rating and average course/professor gpa stat displays for Cal Poly Pomona's course registration portal.",
+      "Display professor ratings and course GPA averages in Cal Poly Pomona's course registration portal.",
     link: 'https://broncodirect.me',
     image: '/images/broncodirectmeimage.png',
   },
