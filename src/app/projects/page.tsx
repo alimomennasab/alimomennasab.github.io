@@ -1,38 +1,39 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from 'next/link';
-import Sidebar from '../components/sidebar';
+import Link from 'next/link'
+import Sidebar from '../components/sidebar'
 
 const projects = [
   {
-    title: "Research",
-    description: "In Progress 🚧",
-    link: "https://cardiacvision.ucsf.edu",
-    image: "/images/heart.png"
+    title: 'Research',
+    description: 'In Progress 🚧',
+    link: 'https://cardiacvision.ucsf.edu',
+    image: '/images/heart.png',
   },
   {
-    title: "NFL Mock Draft Sim",
-    description: "A free NFL mock draft simulator.",
-    link: "https://nfl-mock-draft.vercel.app",
-    image: "/images/nflmockimage.jpeg"
+    title: 'NFL Mock Draft Sim',
+    description: 'A free NFL mock draft simulator.',
+    link: 'https://nfl-mock-draft.vercel.app',
+    image: '/images/nflmockimage.jpeg',
   },
   {
-    title: "BroncoDirectMe",
-    description: "Professor rating and average course/professor gpa stat displays for Cal Poly Pomona's course registration portal.",
-    link: "https://broncodirect.me",
-    image: "/images/broncodirectmeimage.png"
+    title: 'BroncoDirectMe',
+    description:
+      "Professor rating and average course/professor gpa stat displays for Cal Poly Pomona's course registration portal.",
+    link: 'https://broncodirect.me',
+    image: '/images/broncodirectmeimage.png',
   },
   {
-    title: "Somnos",
-    description: "Alert long-distance drivers falling asleep at the wheel with ARKit eye tracking.",
-    link: "https://github.com/alimomennasab/Somnos",
-    image: "/images/SomnosLogo.png"
-  }
-];
+    title: 'Somnos',
+    description: 'Alert long-distance drivers falling asleep at the wheel with ARKit eye tracking.',
+    link: 'https://github.com/alimomennasab/Somnos',
+    image: '/images/SomnosLogo.png',
+  },
+]
 
 export default function ProjectsPage() {
   return (
-    <div className="min-h-screen w-screen bg-amber-50 flex items-center justify-center p-4">
-      <div className="bg-amber-50 flex flex-col md:flex-row justify-between p-4 w-full max-w-4xl h-auto md:h-[600px]">
+    <div className="min-h-screen w-screen bg-secondary-color flex items-center justify-center p-4">
+      <div className="bg-secondary-color flex flex-col md:flex-row justify-between p-4 w-full max-w-4xl h-auto md:h-[600px]">
         <Sidebar imageUrl="/images/projects_image.png" />
         {/* MAIN CONTENT */}
         <div className="flex flex-col justify-start w-full md:w-3/5 overflow-hidden mt-4 md:mt-0">
@@ -56,7 +57,9 @@ export default function ProjectsPage() {
                         />
                       </div>
                     </Link>
-                    <h3 className="text-sm md:text-md font-semibold text-black mt-2">{project.title}</h3>
+                    <h3 className="text-sm md:text-md font-semibold text-black mt-2">
+                      {project.title}
+                    </h3>
                     <p className="text-xs md:text-sm text-gray-600">{project.description}</p>
                   </div>
                 </div>
@@ -66,5 +69,5 @@ export default function ProjectsPage() {
         </div>
       </div>
     </div>
-  );
+  )
 }

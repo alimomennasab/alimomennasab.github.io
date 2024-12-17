@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-color: #057d4a;
+  --secondary-color: #FAF9F6;
+}
+
 @font-face {
   font-family: 'NotoSans';
   src: url('/fonts/Noto_Sans/NotoSans-VariableFont_wdth,wght.ttf') format('truetype');
@@ -18,9 +23,10 @@
 
 body {
   font-family: 'NotoSans', sans-serif;
-  @apply bg-amber-50 min-h-screen;
+  @apply bg-secondary-color min-h-screen;
 }
 
-html, body {
+html,
+body {
   @apply h-full;
 }
