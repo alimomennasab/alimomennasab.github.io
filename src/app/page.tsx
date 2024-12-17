@@ -9,7 +9,7 @@ export default function Home() {
         {/* SIDEBAR */}
         <Sidebar imageUrl="/images/personal_image.jpg" />
         {/* MAIN TEXT */}
-        <div className="flex flex-col justify-start w-full md:w-3/5 overflow-hidden mt-4 md:mt-0">
+        <div className="border-l border-black pl-14 flex flex-col justify-start w-full md:w-3/5 overflow-hidden mt-4 md:mt-0">
           <h1 className="text-black text-base md:text-lg mb-4">
             Hi! I'm a third-year computer science major attending Cal Poly Pomona. I'm interested in
             web development and deep learning. Check out what I've worked on in my

@@ -7,7 +7,7 @@ type SidebarProps = {
 
 const Sidebar: React.FC<SidebarProps> = ({ imageUrl }) => {
   return (
-    <div className="flex flex-col w-3/10 justify-start items-end md:border-r sm:border-r-0 border-black pr-14">
+    <div className="flex flex-col w-3/10 justify-start items-end">
       <h1 className="text-primary-color font-bold text-3xl text-right p-1">
         <Link href="/" className="text-primary-color hover:font-bold">
           Ali Momennasab

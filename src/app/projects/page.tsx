@@ -39,10 +39,10 @@ const projects = [
 export default function ProjectsPage() {
   return (
     <div className="min-h-screen w-screen bg-secondary-color flex items-center justify-center p-4">
-      <div className="bg-secondary-color flex flex-col md:flex-row justify-between p-4 w-full max-w-4xl h-auto md:h-[600px]">
+      <div className="bg-secondary-color flex flex-col md:flex-row justify-between p-4 w-full max-w-4xl md:h-[600px]">
         <Sidebar imageUrl="/images/projects_image.png" />
         {/* MAIN CONTENT */}
-        <div className="flex flex-col justify-start w-full md:w-3/5 overflow-hidden mt-4 md:mt-0">
+        <div className="flex flex-col justify-start w-full md:w-3/5 overflow-hidden border-l border-black pl-14">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">My Projects</h2>
           <div className="overflow-y-auto pr-4 h-full">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

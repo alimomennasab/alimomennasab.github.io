@@ -30,7 +30,7 @@ export default function PhotosPage() {
       <div className="bg-secondary-color flex flex-col md:flex-row justify-between p-4 w-full max-w-4xl h-auto md:h-[600px]">
         <Sidebar imageUrl="/images/photospagepic.jpeg" />
         {/* MAIN CONTENT */}
-        <div className="flex flex-col justify-start w-full md:w-3/5 overflow-hidden mt-4 md:mt-0">
+        <div className="border-l border-black pl-14 flex flex-col justify-start w-full md:w-3/5 overflow-hidden mt-4 md:mt-0">
           <h1 className="text-2xl md:text-3xl font-bold"> Photos </h1>
           <h2 className="italic text-base md:text-lg text-primary-color mb-4">
             {' '}
