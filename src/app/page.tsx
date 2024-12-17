@@ -62,7 +62,7 @@ export default function Home() {
           </h1>
           <h1 className="text-black text-base md:text-lg">
             {' '}
-            • looking for software engineering/deep learning roles for Winter 2025 and Summer 2025
+            • looking for Winter 2025/Summer 2025 software engineering/deep learning roles
           </h1>
         </div>
       </div>
