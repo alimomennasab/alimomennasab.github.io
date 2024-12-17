@@ -11,7 +11,7 @@ const projects = [
   },
   {
     title: 'Undergraduate Seminar',
-    description: 'ResNet-50 Leaf Classification',
+    description: 'ResNet-50 Leaf Disease Classification',
     link: 'https://github.com/alimomennasab/CS4630',
     image: '/images/leafproject.png',
   },
@@ -39,7 +39,7 @@ const projects = [
 export default function ProjectsPage() {
   return (
     <div className="min-h-screen w-screen bg-secondary-color flex items-center justify-center p-4">
-      <div className="bg-secondary-color flex flex-col md:flex-row justify-between p-4 w-full max-w-4xl md:h-[600px]">
+      <div className="bg-secondary-color flex flex-col md:flex-row justify-between p-4 w-full max-w-4xl md:h-[600px] scroller">
         <Sidebar imageUrl="/images/projects_image.png" />
         {/* MAIN CONTENT */}
         <div className="flex flex-col justify-start w-full md:w-3/5 border-l border-black pb-4 pl-14 h-fit">
