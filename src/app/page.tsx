@@ -24,7 +24,7 @@ export default function Home() {
           </h1>
           {/* LINKS */}
           <h1 className="text-black text-base md:text-lg mb-4">
-            Reach out anytime at <span className="font-bold">amomennasab (at) cpp (dot) edu</span>. Or,
+            Reach out at <span className="font-bold">amomennasab (at) cpp (dot) edu</span>. Or,
 
           </h1>
           <h1 className="text-black font-bold text-xl md:text-2xl mb-2">Find Me @</h1>

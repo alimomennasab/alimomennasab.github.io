@@ -16,7 +16,7 @@ const projects = [
     image: '/images/leafproject.png',
   },
   {
-    title: 'NFL Mock Draft Sim',
+    title: 'NFL Mock Draft Simulator',
     description: 'An NFL mock draft simulator for the 2025 draft class.',
     link: 'https://nfl-mock-draft.vercel.app',
     image: '/images/nflmockimage.jpeg',
@@ -24,7 +24,7 @@ const projects = [
   {
     title: 'BroncoDirectMe',
     description:
-      "Display professor ratings and course GPA averages in Cal Poly Pomona's course registration portal.",
+      "Professor ratings & course GPA stats in Cal Poly Pomona's course registration portal.",
     link: 'https://broncodirect.me',
     image: '/images/broncodirectmeimage.png',
   },
@@ -42,16 +42,16 @@ export default function ProjectsPage() {
       <div className="bg-secondary-color flex flex-col md:flex-row justify-between p-4 w-full max-w-4xl md:h-[600px]">
         <Sidebar imageUrl="/images/projects_image.png" />
         {/* MAIN CONTENT */}
-        <div className="flex flex-col justify-start w-full md:w-3/5 overflow-hidden border-l border-black pl-14">
+        <div className="flex flex-col justify-start w-full md:w-3/5 border-l border-black pb-4 pl-14 h-fit">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">My Projects</h2>
-          <div className="overflow-y-auto pr-4 h-full">
+          <div className="h-full">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {projects.map((project, index) => (
                 <div key={index} className="flex flex-col items-center">
                   <div className="w-full">
                     <Link
                       href={project.link}
-                      className="block border border-black bg-white rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                      className="block border border-black transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
