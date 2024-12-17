@@ -27,20 +27,19 @@ const titles = [
 export default function PhotosPage() {
   return (
     <div className="min-h-screen w-screen bg-secondary-color flex items-center justify-center p-4">
-      <div className="bg-secondary-color flex flex-col md:flex-row justify-between p-4 w-full max-w-4xl h-auto md:h-[600px]">
+      <div className="bg-secondary-color flex flex-col md:flex-row justify-between p-4 w-full max-w-4xl md:h-[600px]">
         <Sidebar imageUrl="/images/photospagepic.jpeg" />
         {/* MAIN CONTENT */}
-        <div className="border-l border-black pl-14 flex flex-col justify-start w-full md:w-3/5 overflow-hidden mt-4 md:mt-0">
+        <div className="flex flex-col justify-start w-full md:w-3/5 border-l border-black pl-14 h-fit pb-4">
           <h1 className="text-2xl md:text-3xl font-bold"> Photos </h1>
           <h2 className="italic text-base md:text-lg text-primary-color mb-4">
-            {' '}
-            my favorite pics I've taken{' '}
+            My favorite pics I've taken
           </h2>
           <div className="overflow-y-auto pr-4 h-full">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {photos.map((photo, index) => (
                 <div key={index} className="flex flex-col">
-                  <div className="relative pt-[100%] mb-2">
+                  <div className="relative pt-[100%] mb-2 border border-black">
                     <img
                       src={`/images/${photo}`}
                       alt={titles[index]}
