@@ -18,18 +18,29 @@ const photos = [
 ];
 
 const titles = [
-  'Berkeley, 2024',
-  'Alcatraz Island, 2024',
-  'Kyoto, 2023',
-  'Mt. Fuji, 2023',
-  'Berkeley, 2023',
-  'Lake Arrowhead, 2023',
-  'El Matador Beach, 2022',
-  'El Matador Beach, 2022',
+  'Berkeley, June 2024',
+  'Alcatraz Island, June 2024',
+  'Kyoto, Dec. 2023',
+  'Mt. Fuji, Dec. 2023',
+  'Berkeley, Oct. 2023',
+  'Lake Arrowhead, Jan. 2023',
+  'El Matador Beach, Nov. 2022',
+  'El Matador Beach, Nov. 2022',
+];
+
+const descriptions = [
+  "I spent a month in the Bay researching at UCSF and exploring Berkeley. This was my favorite view from the entire trip.",
+  "This is the best picture I've ever taken. I love the blue of the sky.",
+  'No monkey business here.',
+  'The early-morning view from the window of a Shinkansen from Tokyo to Kyoto.',
+  'Peace a few hours after a 50-49 USC vs. Cal football shootout.',
+  'My hands were so numb I could barely click the photo button.',
+  '',
+  'What are they talking about?',
 ];
 
 export default function PhotosPage() {
-  const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
+  const [selectedPhoto, setSelectedPhoto] = useState<{photo: string; index: number} | null>(null);
 
   useEffect(() => {
     if (selectedPhoto !== null) {
@@ -57,7 +68,7 @@ export default function PhotosPage() {
                     photo={photo}
                     title={titles[index]}
                     index={index}
-                    onClick={() => setSelectedPhoto(photo)}
+                    onClick={() => setSelectedPhoto({photo: photo, index: index})}
                   />
                 ))}
               </div>
@@ -67,9 +78,10 @@ export default function PhotosPage() {
       </div>
 
       <PhotoPopup
-        photo={selectedPhoto || ''}
+        photo={selectedPhoto?.photo || ''}
         isOpen={selectedPhoto !== null}
         onClose={() => setSelectedPhoto(null)}
+        description={selectedPhoto ? descriptions[selectedPhoto.index] : ''}
       />
     </>
   );
