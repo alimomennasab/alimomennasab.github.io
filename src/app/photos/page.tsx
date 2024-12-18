@@ -31,10 +31,9 @@ const titles = [
 export default function PhotosPage() {
   const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
 
-  // don't allow scrolling when popup is open
   useEffect(() => {
     if (selectedPhoto !== null) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden'; // don't allow scrolling when popup is open
     } else {
       document.body.style.overflow = 'unset';
     }
