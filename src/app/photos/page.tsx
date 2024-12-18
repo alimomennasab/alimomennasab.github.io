@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import Sidebar from '../components/sidebar'
+import PhotoElement from '../components/PhotoElement'
 
 const photos = [
   'berkeley2.jpg',
@@ -37,19 +38,13 @@ export default function PhotosPage() {
           </h2>
           <div className="overflow-y-auto pr-4 h-full">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {photos.map((photo, index) => (
-                <div key={index} className="flex flex-col">
-                  <div className="relative pt-[100%] mb-2 border border-black">
-                    <img
-                      src={`/images/${photo}`}
-                      alt={titles[index]}
-                      className="absolute top-0 left-0 w-full h-full object-cover"
-                    />
-                  </div>
-                  <p className="text-xs sm:text-sm text-center font-medium text-gray-700">
-                    {titles[index]}
-                  </p>
-                </div>
+            {photos.map((photo, index) => (
+                <PhotoElement
+                  key={index}
+                  photo={photo}
+                  title={titles[index]}
+                  index={index}
+                />
               ))}
             </div>
           </div>
