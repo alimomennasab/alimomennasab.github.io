@@ -4,22 +4,25 @@ import Sidebar from '../components/sidebar'
 
 const projects = [
   {
-    title: 'Research',
-    description: 'Generating synthetic ultrasound data with Matlab',
+    title: 'Cardiac Vision Lab',
+    description: 'Generating synthetic ultrasound data with Matlab.',
     link: 'https://cardiacvision.ucsf.edu',
     image: '/images/heart.png',
+    year: '[Research] 2023 - Present'
   },
   {
     title: 'Undergraduate Seminar',
-    description: 'ResNet-50 Leaf Disease Classification',
+    description: 'ResNet-50 Leaf Disease Classification.',
     link: 'https://github.com/alimomennasab/CS4630',
     image: '/images/leafproject.png',
+    year: '[Project] 2024'
   },
   {
     title: 'NFL Mock Draft Simulator',
     description: 'An NFL mock draft simulator for the 2025 draft class.',
     link: 'https://nfl-mock-draft.vercel.app',
     image: '/images/nflmockimage.jpeg',
+    year: '[Project] 2024'
   },
   {
     title: 'BroncoDirectMe',
@@ -27,12 +30,14 @@ const projects = [
       "Professor ratings & course GPA stats in Cal Poly Pomona's course registration portal.",
     link: 'https://broncodirect.me',
     image: '/images/broncodirectmeimage.png',
+    year: '[Project] 2023'
   },
   {
     title: 'Somnos',
     description: 'Alert long-distance drivers falling asleep at the wheel with ARKit eye tracking.',
     link: 'https://github.com/alimomennasab/Somnos',
     image: '/images/SomnosLogo.png',
+    year: '[Project] 2022'
   },
 ]
 
@@ -66,6 +71,7 @@ export default function ProjectsPage() {
                     <h3 className="text-sm md:text-md font-semibold text-black mt-2">
                       {project.title}
                     </h3>
+                    <p className='text-sm text-black italic'> {project.year} </p>
                     <p className="text-xs md:text-sm text-gray-600">{project.description}</p>
                   </div>
                 </div>
