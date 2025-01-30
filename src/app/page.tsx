@@ -56,14 +56,14 @@ export default function Home() {
           </div>
           {/* CURRENTLY */}
           <h1 className="text-black font-bold text-xl md:text-2xl mb-2">Currently</h1>
-          <h1 className="text-black text-base md:text-lg">
-            {' '}
-            • researching at the Cardiac Vision Lab at UCSF{' '}
-          </h1>
-          <h1 className="text-black text-base md:text-lg">
-            {' '}
-            • looking for Winter 2025/Summer 2025 software engineering/deep learning roles
-          </h1>
+          <ul className="list-disc list-inside">
+            <li className="text-black text-base md:text-lg">
+              researching at the Cardiac Vision Lab at UCSF
+            </li>
+            <li className="text-black text-base md:text-lg">
+              looking for Winter 2025/Summer 2025 software engineering/deep learning roles
+            </li>
+          </ul>
         </div>
       </div>
     </div>
