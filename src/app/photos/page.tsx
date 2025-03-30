@@ -37,18 +37,18 @@ const titles = [
 ];
 
 const descriptions = [
-  "I spent a month in the Bay researching at UCSF and exploring Berkeley. This was my favorite view from the entire trip.",
-  "This is the best picture I've ever taken. I love the blue of the sky.",
-  'No monkey business here.',
+  "I spent a month in the Bay researching at UCSF and exploring the Bay. This was my favorite view from the entire trip.",
+  '',
+  '',
   'The early-morning view from the window of a Shinkansen from Tokyo to Kyoto.',
   '',
   '',
-  'Peace a few hours after a 50-49 USC vs. Cal football shootout.',
+  'I took this picture a few hours after Caleb Williams threw for 369 yards vs. Cal.',
   '',
   '',
-  'My hands were so numb I could barely click the photo button.',
   '',
-  'What are they talking about?',
+  '',
+  '',
 ];
 
 export default function PhotosPage() {
