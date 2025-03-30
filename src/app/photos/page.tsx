@@ -37,7 +37,7 @@ const titles = [
 ];
 
 const descriptions = [
-  "I spent a month in the Bay researching at UCSF and exploring the Bay. This was my favorite view from the entire trip.",
+  "I spent June researching at UCSF and exploring the Bay. This was my favorite view from the entire trip.",
   '',
   '',
   'The early-morning view from the window of a Shinkansen from Tokyo to Kyoto.',
