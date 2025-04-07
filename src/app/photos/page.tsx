@@ -43,7 +43,7 @@ const descriptions = [
   'The early-morning view from the window of a Shinkansen from Tokyo to Kyoto.',
   '',
   '',
-  'I took this picture a few hours after Caleb Williams threw for 369 yards vs. Cal.',
+  'I took this picture a few hours after watching Caleb Williams throw for 369 yards vs. Cal.',
   '',
   '',
   '',

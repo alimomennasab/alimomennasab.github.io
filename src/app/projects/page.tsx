@@ -4,8 +4,15 @@ import Sidebar from '../components/sidebar'
 
 const projects = [
   {
+    title: 'DomainFilms',
+    description: 'A movie streaming website with a custom recommendation system.',
+    link: 'https://master.d3i4ueyzohhlqp.amplifyapp.com',
+    image: '/images/domainfilms.png',
+    year: '[Project] 2025 - Present'
+  },
+  {
     title: 'Cardiac Vision Lab',
-    description: 'Generating synthetic ultrasound data with Matlab.',
+    description: 'Generating synthetic ultrasound data and segmenting ultrasound hearts with deep learning.',
     link: 'https://cardiacvision.ucsf.edu',
     image: '/images/heart.png',
     year: '[Research] 2023 - Present'
