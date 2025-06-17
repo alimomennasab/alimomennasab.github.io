@@ -6,7 +6,7 @@ const projects = [
   {
     title: 'DomainFilms',
     description: 'A movie streaming website with a custom recommendation system.',
-    link: 'https://master.d3i4ueyzohhlqp.amplifyapp.com',
+    link: 'https://github.com/ethan-ngo/CS4800-Netflix',
     image: '/images/domainfilms.png',
     year: '[Project] 2025 - Present'
   },
