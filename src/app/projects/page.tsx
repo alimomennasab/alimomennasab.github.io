@@ -4,15 +4,22 @@ import Sidebar from '../components/sidebar'
 
 const projects = [
   {
+    title: 'Research Paper Summarizer',
+    description: 'A web app that summarizes research papers using AI.',
+    link: 'https://github.com/alimomennasab/paper-summarizer',
+    image: '/images/paper_summarizer.png',
+    year: '[Project] 2025'
+  },
+  {
     title: 'DomainFilms',
     description: 'A movie streaming website with a custom recommendation system.',
     link: 'https://github.com/ethan-ngo/CS4800-Netflix',
     image: '/images/domainfilms.png',
-    year: '[Project] 2025 - Present'
+    year: '[Project] 2024'
   },
   {
     title: 'Cardiac Vision Lab',
-    description: 'Generating synthetic ultrasound data and segmenting ultrasound hearts with deep learning.',
+    description: 'Segmenting ultrasound hearts with deep learning.',
     link: 'https://cardiacvision.ucsf.edu',
     image: '/images/heart.png',
     year: '[Research] 2023 - Present'
