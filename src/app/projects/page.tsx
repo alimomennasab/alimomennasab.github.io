@@ -5,14 +5,14 @@ import Sidebar from '../components/sidebar'
 const projects = [
   {
     title: 'Research Paper Summarizer',
-    description: 'A web app that summarizes research papers using AI.',
+    description: 'A web app for summarzing research papers with the OpenAI API.',
     link: 'https://github.com/alimomennasab/paper-summarizer',
     image: '/images/paper_summarizer.png',
     year: '[Project] 2025'
   },
   {
     title: 'DomainFilms',
-    description: 'A movie streaming website with a custom recommendation system.',
+    description: 'A movie browsing/streaming website with a custom recommendation system.',
     link: 'https://github.com/ethan-ngo/CS4800-Netflix',
     image: '/images/domainfilms.png',
     year: '[Project] 2024'

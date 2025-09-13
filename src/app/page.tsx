@@ -11,8 +11,8 @@ export default function Home() {
         {/* MAIN TEXT */}
         <div className="border-l border-black pl-14 flex flex-col justify-start w-full md:w-3/5 overflow-hidden mt-4 md:mt-0">
           <h1 className="text-black text-base md:text-lg mb-4">
-            Hi! I'm a third-year computer science major attending Cal Poly Pomona. I'm interested in
-            web development and deep learning. Check out what I've worked on in my
+            Hi! I'm a fourth-year computer science major at Cal Poly Pomona. I'm interested in
+            deep learning and web development. Check out what I've worked on in my
             <span>&nbsp;</span>
             <span>
               <Link href="/projects" className="text-primary-color hover:underline">
@@ -28,14 +28,14 @@ export default function Home() {
 
           </h1>
           <h1 className="text-black font-bold text-xl md:text-2xl mb-2">Find Me @</h1>
-          <div className="flex flex-row justify-between w-full md:w-1/2 mb-4">
+          <div className="flex flex-row justify-left w-full md:w-1/2 mb-4 gap-4">
             <a
               href="https://github.com/alimomennasab"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary-color text-base md:text-lg hover:underline"
             >
-              GitHub
+              GitHub 
             </a>
             <a
               href="https://www.linkedin.com/in/amomennasab/"
@@ -43,25 +43,17 @@ export default function Home() {
               rel="noopener noreferrer"
               className="text-primary-color text-base md:text-lg hover:underline"
             >
-              Linkedin
-            </a>
-            <a
-              href="https://x.com/momennasabali"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary-color text-base md:text-lg hover:underline"
-            >
-              Twitter
+              LinkedIn
             </a>
           </div>
           {/* CURRENTLY */}
           <h1 className="text-black font-bold text-xl md:text-2xl mb-2">Currently</h1>
           <ul className="list-disc list-inside">
             <li className="text-black text-base md:text-lg">
-              researching at the Cardiac Vision Lab at UCSF
+              researching at the Cardiac Vision Lab at UCSF & the Kosaraju Lab at Cal Poly Pomona
             </li>
             <li className="text-black text-base md:text-lg">
-              looking for Winter 2025/Summer 2025 software engineering/deep learning roles
+              looking for Winter 2026/Summer 2026 applied AI/ML and software engineering roles
             </li>
           </ul>
         </div>
