@@ -4,29 +4,43 @@ import Sidebar from '../components/sidebar'
 
 const projects = [
   {
+    title: 'NFL RAG Chatbot',
+    description: 'A retrieval-augmented generation pipeline for an NFL info chatbot.',
+    link: 'https://github.com/alimomennasab/NFL-RAG',
+    image: '/images/nfl_rag.png',
+    year: '[Project] 2025'
+  },
+  {
     title: 'Research Paper Summarizer',
-    description: 'A web app for summarzing research papers with the OpenAI API.',
+    description: 'A web app for summarizing research papers with the OpenAI API.',
     link: 'https://github.com/alimomennasab/paper-summarizer',
     image: '/images/paper_summarizer.png',
     year: '[Project] 2025'
   },
   {
     title: 'DomainFilms',
-    description: 'A movie browsing/streaming website with a custom recommendation system.',
+    description: 'A movie browsing/streaming website & app with personalized recommendations.',
     link: 'https://github.com/ethan-ngo/CS4800-Netflix',
     image: '/images/domainfilms.png',
     year: '[Project] 2024'
   },
   {
+    title: 'Music Genre Transfer',
+    description: 'Experimented with different generative AI models (VAE, GANs, WGANs) for performing music genre transfer.',
+    link: 'https://github.com/alimomennasab/CS4990-Generative-AI',
+    image: '/images/music_genre_transfer.jpg',
+    year: '[Project] 2025'
+  },
+  {
     title: 'Cardiac Vision Lab',
-    description: 'Segmenting ultrasound hearts with deep learning.',
+    description: 'Segmenting heart ultrasounds with deep learning.',
     link: 'https://cardiacvision.ucsf.edu',
     image: '/images/heart.png',
     year: '[Research] 2023 - Present'
   },
   {
-    title: 'Undergraduate Seminar',
-    description: 'ResNet-50 Leaf Disease Classification.',
+    title: 'Senior Seminar',
+    description: 'Leaf Disease Classification with ResNet-50.',
     link: 'https://github.com/alimomennasab/CS4630',
     image: '/images/leafproject.png',
     year: '[Project] 2024'
