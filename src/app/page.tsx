@@ -53,7 +53,10 @@ export default function Home() {
               researching at the Cardiac Vision Lab at UCSF & the Kosaraju Lab at Cal Poly Pomona
             </li>
             <li className="text-black text-base md:text-lg">
-              looking for Winter 2026/Summer 2026 applied AI/ML and software engineering roles
+              looking for applied AI/ML & software engineer roles
+            </li>
+            <li className="text-black text-base md:text-lg">
+              learning how to play the electric guitar!
             </li>
           </ul>
         </div>
