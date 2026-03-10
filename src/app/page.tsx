@@ -11,8 +11,8 @@ export default function Home() {
         {/* MAIN TEXT */}
         <div className="border-l border-black pl-14 flex flex-col justify-start w-full md:w-3/5 overflow-hidden mt-4 md:mt-0">
           <h1 className="text-black text-base md:text-lg mb-4">
-            Hi! I'm a fourth-year computer science major at Cal Poly Pomona. I'm interested in
-            deep learning and web development. Check out what I've worked on in my
+            Hi! I'm an incoming MSCS student at UCSD. I recently completed my CS & data science undergrad at Cal Poly Pomona.
+            Check out what I've worked on in my
             <span>&nbsp;</span>
             <span>
               <Link href="/projects" className="text-primary-color hover:underline">
@@ -46,6 +46,12 @@ export default function Home() {
               LinkedIn
             </a>
           </div>
+          {/* INTERESTS */}
+          <h1 className="text-black font-bold text-xl md:text-2xl mb-2">Interests</h1>
+          <p className='text-black text-base md:text-lg mb-2'> 
+            Computer vision, ML, multimodal generative models
+          </p>
+
           {/* CURRENTLY */}
           <h1 className="text-black font-bold text-xl md:text-2xl mb-2">Currently</h1>
           <ul className="list-disc list-inside">
