@@ -49,7 +49,7 @@ export default function Home() {
           {/* INTERESTS */}
           <h1 className="text-black font-bold text-xl md:text-2xl mb-2">Interests</h1>
           <p className='text-black text-base md:text-lg mb-2'> 
-            Computer vision, ML, multimodal generative models
+            Computer vision, vision language models, mechanistic interpretability
           </p>
 
           {/* CURRENTLY */}
@@ -57,9 +57,6 @@ export default function Home() {
           <ul className="list-disc list-inside">
             <li className="text-black text-base md:text-lg">
               researching at the Cardiac Vision Lab at UCSF & the Kosaraju Lab at Cal Poly Pomona
-            </li>
-            <li className="text-black text-base md:text-lg">
-              looking for applied AI/ML & software engineer roles
             </li>
             <li className="text-black text-base md:text-lg">
               learning how to play the electric guitar!

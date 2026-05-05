@@ -11,7 +11,7 @@
 
 # next.js
 /.next/
-/out/
+# /out/ is not ignored — static export is committed after `npm run build` for deploy-from-repo.
 
 # production
 /build

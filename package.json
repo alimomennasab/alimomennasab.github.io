@@ -11,12 +11,18 @@
   },
   "dependencies": {
     "@types/react-pdf": "^7.0.0",
+    "gray-matter": "^4.0.3",
+    "katex": "^0.16.45",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "react-pdf": "^9.1.0"
+    "react-markdown": "^10.1.0",
+    "react-pdf": "^9.1.0",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
