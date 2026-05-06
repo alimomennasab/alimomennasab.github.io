@@ -10,12 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: [
-          '"Instrument Sans"',
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif",
-        ],
+        sans: ["Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -24,10 +19,11 @@ const config: Config = {
       },
       colors: {
         "primary-color": "var(--primary-color)",
-        "secondary-color": "var(--secondary-color)"
+        "secondary-color": "var(--secondary-color)",
       },
     },
   },
   plugins: [typography],
 };
+
 export default config;

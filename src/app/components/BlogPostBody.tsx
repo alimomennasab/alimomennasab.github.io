@@ -1,5 +1,6 @@
 import ReactMarkdown from 'react-markdown'
 import rehypeKatex from 'rehype-katex'
+import rehypeRaw from 'rehype-raw'
 import remarkMath from 'remark-math'
 
 type BlogPostBodyProps = {
@@ -12,6 +13,7 @@ export default function BlogPostBody({ content }: BlogPostBodyProps) {
       <ReactMarkdown
         remarkPlugins={[remarkMath]}
         rehypePlugins={[
+          rehypeRaw,
           [rehypeKatex, { strict: false, throwOnError: false }],
         ]}
         components={{
