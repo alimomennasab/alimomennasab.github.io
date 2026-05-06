@@ -69,7 +69,13 @@ $$
 where $z \sim \mathcal{N}(0, I)$ if $t > 1$, else $z = 0$. When $t = 0$, that is the very last step of the reverse process, which is where the noiseless image is produced. 
 
 ## Model Architectures
-To perform the noise prediction, Ho et al. (2021) utilized a modified U-Net model. [todo explain UNet]
+To perform the noise prediction, Ho et al. (2021) utilized a modified U-Net model. U-Net consists of a decoder, bottleneck, and encoder, with skip connections between layers of the same resolution in the encoder and decoder. 
+<figure class="md-figure">
+  <img src="/images/blog/diffusion/U-net.png" alt="UNet diagram" />
+  <figcaption>
+    Figure 2: Diagram of the UNet architecture
+  </figcaption>
+</figure>
 
 The U-Net is time-conditioned using the current timestep so the model can understand that larger timesteps correspond with noisier images. However, the timestep $T$ is not directly passed through the model because a single large integer timestep value is not informative or efficient for the model to process. Timesteps are embedded using Transformer sinusoidal positional embeddings (Vaswani et al., 2017), which turn the single integer into a vector of size $d_{model}$ that is computed with:
 
@@ -85,7 +91,14 @@ $$
 Cosine and sine are utilized for computing positional embeddings because they allow timestep $t$ to be a linear transformation of timestep $t + k$, which allows the model to learn the relative positions between timesteps with ease. Neither cosine and sine can individually be used because when we represent the embedding as a point in a 2D unit circle, shifting $k$ timesteps requires both cosine and sine shifts. Additionally, a huge benefit of representing the timestep with sinusoidal positional embeddings is they are deterministic. No training is required to produce them.
 
 
-The U-Net's blocks consist of two residual layers (He et al., 2015), with two residual blocks per image resolution. The U-Net also includes self-attention blocks (Vaswani et al., 2017) at the bottleneck and 16x16 resolution layers. The self-attention blocks improve denoising capabilities because they allow the model to understand how every pixel within a feature map should attend to each other. Convolutional blocks only learn local relationships due to their small kernel sizes.
+The U-Net's blocks consist of two residual layers (He et al., 2015), with two residual blocks per image resolution. The U-Net also includes self-attention blocks (Vaswani et al., 2017) at the bottleneck and 16x16 resolution layers. These self-attention blocks pass feature maps through three linear projections ($W_Q$, $W_K$, and $W_V$) to produce queries ($Q$), keys ($K$), and values ($V$). Attention weights are then computed as:
+
+$$
+\mathrm{Attention}(Q, K, V) = \mathrm{softmax}\!\left(\frac{QK^\top}{\sqrt{d_k}}\right)V
+$$
+
+While it is unclear exactly what relationship the self-attention blocks create between pixels of a feature map, they improve denoising because they help the model create relationships between any region of a feature map. Convolutional blocks alone are insufficient for diffusion because they only learn local relationships due to their small kernel sizes.
+
 
 An alternative to the U-Net in diffusion models emerged with Diffusion Transformers (DiTs) (Peebles & Xie, 2022), where a vision transformer (ViT) replaces the U-Net. The flow of a DiT is: compress an input image with a VAE encoder into a latent representation $z$, noise $z$, and patch $z$ with the ViT before performing forward diffusion. The benefit of using a transformer instead of an attention-based UNet is because transformers are more scalable. Larger transformers empirically perform better at diffusion generation than similarly sized UNets (Peebles & Xie, 2022). 
 
@@ -114,7 +127,7 @@ The flow of training a diffusion model is as follows for an input training sampl
 <figure class="md-figure">
   <img src="/images/blog/diffusion/ddpm_train.png" alt="DDPM training process" />
   <figcaption>
-    Figure 2: DDPM training pipeline.
+    Figure 3: DDPM training pipeline.
   </figcaption>
 </figure>
 
@@ -124,7 +137,7 @@ After the diffusion model has been trained, we can input an image consisting of 
 <figure class="md-figure">
   <img src="/images/blog/diffusion/ddpm_inference.png" alt="DDPM inference process" />
   <figcaption>
-    Figure 3: DDPM inference starts from pure Gaussian noise and iteratively denoises over T timesteps to reconstruct a realistic sample.
+    Figure 4: DDPM inference starts from pure Gaussian noise and iteratively denoises over T timesteps to reconstruct a realistic sample.
   </figcaption>
 </figure>
 
