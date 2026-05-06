@@ -19,6 +19,7 @@ export default function Home() {
             As a byproduct, I have a growing interest in the mechanistic interpretability
             of both vision and language models. 
           </h1>
+
           {/* LINKS */}
           <h1 className="text-black text-base md:text-lg mb-4">
             Reach out at <span className="font-bold">amomennasab (at) cpp (dot) edu</span>. Or,
@@ -41,6 +42,22 @@ export default function Home() {
               className="text-primary-color text-base md:text-lg hover:underline"
             >
               LinkedIn
+            </a>
+            <a
+              href="https://www.chess.com/member/ali_m_123"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-color text-base md:text-lg hover:underline"
+            >
+              Chess.com
+            </a>
+            <a
+              href="https://www.goodreads.com/user/show/200826158-ali-momennasab"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-color text-base md:text-lg hover:underline"
+            >
+              Goodreads
             </a>
           </div>
           {/* INTERESTS
