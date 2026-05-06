@@ -11,16 +11,13 @@ export default function Home() {
         {/* MAIN TEXT */}
         <div className="border-l border-black pl-14 flex flex-col justify-start w-full md:w-3/5 overflow-hidden mt-4 md:mt-0">
           <h1 className="text-black text-base md:text-lg mb-4">
-            Hi! I'm an incoming MSCS student at UCSD. I recently completed my CS & data science undergrad at Cal Poly Pomona.
-            Check out what I've worked on in my
-            <span>&nbsp;</span>
-            <span>
-              <Link href="/projects" className="text-primary-color hover:underline">
-                Projects
-              </Link>
-            </span>
-            <span>&nbsp;</span>
-            page!
+            Hi, I'm Ali! I'm an MSCS student at UCSD. 
+          </h1>
+          <h1 className="text-black text-base md:text-lg mb-4">
+            I'm interested in vision language models and how they produce text/image representations.
+            
+            As a byproduct, I have a growing interest in the mechanistic interpretability
+            of both vision and language models. 
           </h1>
           {/* LINKS */}
           <h1 className="text-black text-base md:text-lg mb-4">
@@ -46,11 +43,11 @@ export default function Home() {
               LinkedIn
             </a>
           </div>
-          {/* INTERESTS */}
+          {/* INTERESTS
           <h1 className="text-black font-bold text-xl md:text-2xl mb-2">Interests</h1>
           <p className='text-black text-base md:text-lg mb-2'> 
             Computer vision, vision language models, mechanistic interpretability
-          </p>
+          </p> */}
 
           {/* CURRENTLY */}
           <h1 className="text-black font-bold text-xl md:text-2xl mb-2">Currently</h1>
