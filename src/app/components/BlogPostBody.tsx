@@ -9,7 +9,7 @@ type BlogPostBodyProps = {
 
 export default function BlogPostBody({ content }: BlogPostBodyProps) {
   return (
-    <div className="prose prose-neutral max-w-none text-black prose-headings:text-black prose-p:text-black prose-li:text-black prose-strong:text-black prose-code:text-black prose-pre:bg-stone-100 prose-a:text-primary-color hover:prose-a:underline">
+    <div className="prose prose-neutral max-w-none text-black prose-headings:text-black prose-p:text-black prose-p:text-[1.1rem] prose-li:text-black prose-li:text-[1.1rem] prose-strong:text-black prose-code:text-black prose-pre:bg-stone-100 prose-a:text-primary-color hover:prose-a:underline">
       <ReactMarkdown
         remarkPlugins={[remarkMath]}
         rehypePlugins={[

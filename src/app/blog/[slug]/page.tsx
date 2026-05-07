@@ -34,6 +34,7 @@ function readPost(slug: string) {
   return {
     title: data.title as string,
     date: data.date as string,
+    time: data.time as number,
     content,
   }
 }
@@ -61,17 +62,21 @@ export default function BlogPostPage({ params }: Props) {
           href="/blog"
           className="inline-flex items-center rounded-md border border-black/15 bg-white/60 px-4 py-2 text-sm font-medium text-primary-color shadow-sm transition-colors hover:border-black/25 hover:bg-white"
         >
-          ← All posts
+          &lt; All posts
         </Link>
         <article className="mt-10">
-          <p className="text-sm text-gray-600">{formatPostDate(post.date)}</p>
           <h1 className="mt-2 text-3xl font-bold text-black md:text-4xl">
             {post.title}
           </h1>
+          <p className="text-gray-600 pt-2">{formatPostDate(post.date)}</p>
+          <p className="italic text-gray-600 pt-2">
+            Estimated Reading Time: {post.time} mins
+          </p>
           <div className="mt-10">
             <BlogPostBody content={post.content} />
           </div>
         </article>
+        
       </div>
     </div>
   )

@@ -16,6 +16,7 @@ body {
   @apply h-full;
 }
 
+/* Markdown components */
 .prose .md-figure img {
   display: block;
   width: 100%;

@@ -1,7 +1,9 @@
 ---
 title: Diffusion Models
 date: 2026-05-04
+time: 18
 ---
+
 
 Before diffusion models, image generation was largely dominated by GANs. This was despite their inherently poor training stability caused by their two competing networks. Diffusion models emerged as a more stable alternative that produce highly realistic images, and now, are the most popular model for image generation tasks. But what are diffusion models, and how do they work? 
 
