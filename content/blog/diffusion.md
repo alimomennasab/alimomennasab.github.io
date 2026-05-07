@@ -25,7 +25,7 @@ $\beta_T$, the intensity of the noise at the current timestep, is controlled by 
 <figure class="md-figure">
   <img src="/images/blog/diffusion/schedulers.png" alt="Linear vs. cosine scheduler" />
   <figcaption>
-    Figure 1: The cosine schedule preserves signal longer, yielding more informative noisy samples than a purely linear schedule.
+    Figure 1: The cosine schedule preserves signal longer, yielding more informative noisy samples than a purely linear schedule. Image source: Nichol & Dhariwal (2021)
   </figcaption>
 </figure>
 
@@ -71,11 +71,11 @@ $$
 where $z \sim \mathcal{N}(0, I)$ if $t > 1$, else $z = 0$. When $t = 0$, that is the very last step of the reverse process, which is where the noiseless image is produced. 
 
 ## Model Architectures
-To perform the noise prediction, Ho et al. (2021) utilized a modified U-Net model. U-Net consists of a decoder, bottleneck, and encoder, with skip connections between layers of the same resolution in the encoder and decoder. 
+To perform the noise prediction, Ho et al. (2021) utilized a modified U-Net model (Ronneberger et al., 2015). U-Net consists of a decoder, bottleneck, and encoder, with skip connections between layers of the same resolution in the encoder and decoder. 
 <figure class="md-figure">
   <img src="/images/blog/diffusion/U-net.png" alt="UNet diagram" />
   <figcaption>
-    Figure 2: Diagram of the UNet architecture
+    Figure 2: Diagram of the UNet architecture. Image source: Ronneberger et al. (2015)
   </figcaption>
 </figure>
 
@@ -129,7 +129,7 @@ The flow of training a diffusion model is as follows for an input training sampl
 <figure class="md-figure">
   <img src="/images/blog/diffusion/ddpm_train.png" alt="DDPM training process" />
   <figcaption>
-    Figure 3: DDPM training pipeline.
+    Figure 3: DDPM training pipeline. Image source: Ho et al. (2020)
   </figcaption>
 </figure>
 
@@ -139,7 +139,7 @@ After the diffusion model has been trained, we can input an image consisting of 
 <figure class="md-figure">
   <img src="/images/blog/diffusion/ddpm_inference.png" alt="DDPM inference process" />
   <figcaption>
-    Figure 4: DDPM inference starts from pure Gaussian noise and iteratively denoises over T timesteps to reconstruct a realistic sample.
+    Figure 4: DDPM inference starts from pure Gaussian noise and iteratively denoises over T timesteps to reconstruct a realistic sample. Image source: Ho et al. (2020)
   </figcaption>
 </figure>
 
