@@ -14,6 +14,12 @@ const Sidebar: React.FC<SidebarProps> = ({ imageUrl }) => {
         </Link>
       </h1>
       <Link
+        href="/blog"
+        className="text-primary-color font-light text-xl text-right p-1 hover:font-bold"
+      >
+        Blog
+      </Link>
+      <Link
         href="/projects"
         className="text-primary-color font-light text-xl text-right p-1 hover:font-bold"
       >
@@ -24,12 +30,6 @@ const Sidebar: React.FC<SidebarProps> = ({ imageUrl }) => {
         className="text-primary-color font-light text-xl text-right p-1 hover:font-bold"
       >
         Photos
-      </Link>
-      <Link
-        href="/blog"
-        className="text-primary-color font-light text-xl text-right p-1 hover:font-bold"
-      >
-        Blog
       </Link>
       <Link
         href="/Ali_Momennasab_resume.pdf"
