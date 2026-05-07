@@ -155,24 +155,27 @@ At each inference step, we can directly predict the clean image $x_0$ with our c
 
 
 ## References
-Sohl-Dickstein et al. (2015), Deep Unsupervised Learning using Nonequilibrium Thermodynamics: https://arxiv.org/abs/1503.03585
 
-Ho et al. (2020), Denoising Diffusion Probabilistic Models (DDPM): https://arxiv.org/abs/2006.11239
+1. **Sohl-Dickstein et al.** (2015). _Deep unsupervised learning using nonequilibrium thermodynamics._ [arXiv](https://arxiv.org/abs/1503.03585)
 
-Nichol & Dhariwal (2021), Improved Denoising Diffusion Probabilistic Models: https://arxiv.org/abs/2102.09672
+2. **Ho et al.** (2020). _Denoising diffusion probabilistic models (DDPM)._ [arXiv](https://arxiv.org/abs/2006.11239)
 
-Dhariwal & Nichol (2021), Diffusion Models Beat GANs on Image Synthesis (ADM): https://arxiv.org/abs/2105.05233
+3. **Nichol & Dhariwal** (2021). _Improved denoising diffusion probabilistic models._ [arXiv](https://arxiv.org/abs/2102.09672)
 
-Song et al. (2020), Denoising Diffusion Implicit Models (DDIM): https://arxiv.org/abs/2010.02502
+4. **Ronneberger et al.** (2015). _U-Net: Convolutional networks for biomedical image segmentation._ [arXiv](https://arxiv.org/abs/1505.04597)
 
-Ho & Salimans (2022), Classifier-Free Diffusion Guidance: https://arxiv.org/abs/2207.12598
+5. **Vaswani et al.** (2017). _Attention is all you need._ [arXiv](https://arxiv.org/abs/1706.03762)
 
-Ronneberger et al. (2015), U-Net: Convolutional Networks for Biomedical Image Segmentation: https://arxiv.org/abs/1505.04597
+6. **He et al.** (2015). _Deep residual learning for image recognition (ResNet)._ [arXiv](https://arxiv.org/abs/1512.03385)
 
-He et al. (2015), Deep Residual Learning for Image Recognition (ResNet): https://arxiv.org/abs/1512.03385
+7. **Dosovitskiy et al.** (2020). _An image is worth 16×16 words (Vision Transformer)._ [arXiv](https://arxiv.org/abs/2010.11929)
 
-Vaswani et al. (2017), Attention Is All You Need: https://arxiv.org/abs/1706.03762
+8. **Peebles & Xie** (2022). _Scalable diffusion models with transformers (DiT)._ [arXiv](https://arxiv.org/abs/2212.09748)
 
-Dosovitskiy et al. (2020), An Image is Worth 16x16 Words (Vision Transformer): https://arxiv.org/abs/2010.11929
+9. **Dhariwal & Nichol** (2021). _Diffusion models beat GANs on image synthesis (ADM)._ [arXiv](https://arxiv.org/abs/2105.05233)
 
-Peebles & Xie (2022), Scalable Diffusion Models with Transformers (DiT): https://arxiv.org/abs/2212.09748
+10. **Ho & Salimans** (2022). _Classifier-free diffusion guidance._ [arXiv](https://arxiv.org/abs/2207.12598)
+
+11. **Song et al.** (2020). _Denoising diffusion implicit models (DDIM)._ [arXiv](https://arxiv.org/abs/2010.02502)
+
+
