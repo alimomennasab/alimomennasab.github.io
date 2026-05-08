@@ -15,12 +15,16 @@ Diffusion models (DDPMS) were introduced by Sohl-Dickstein et al. (2015) and pop
 ## Forward Process
 The forward (diffusion) process gradually adds Gaussian noise to an input image over a total of $T$ timesteps. At each timestep, the amount of noise for the current image $x_t$ is computed with: 
 
-$$
+<!-- $$
 q(\mathbf{x}_t \mid \mathbf{x}_{t-1}) := \mathcal{N}(\mathbf{x}_t;\ \sqrt{1 - \beta_t}\,\mathbf{x}_{t-1},\ \beta_t \mathbf{I})
 \tag{1}
+$$ -->
+
+$$
+q(\mathbf{x}_t|\mathbf{x}_0) = \mathcal{N}(\mathbf{x}_t; \sqrt{\bar{\alpha}_t}\mathbf{x}_0, (1 - \bar{\alpha}_t)\mathbf{I})
 $$
 
-$\beta_T$, the intensity of the noise at the current timestep, is controlled by a noise scheduler. Ho et al. utilized a linear noise scheduler, which creates $T$ equally incremented values of $\beta_T$ from 1e-4 to 0.02. Larger timesteps produce larger $\beta_T$ values, which increasingly corrupt the input image. However, a linear scheduler produces high $\beta_T$ values for many timesteps, producing a larger portion of degraded images that are less useful to train with. Nichol & Dhariwal later proposed a cosine noise scheduler that increments $\beta_T$ more gradually to provide more informative data samples, consequently improving image generations. 
+$\alpha_t$ represents the amount of signal, or non-noise, in the image. Conversely, the intensity of the noise at the current timestep $\beta_T = 1 - \alpha_t$ is controlled by a noise scheduler. Ho et al. utilized a linear noise scheduler, which creates $T$ equally incremented values of $\beta_T$ from 1e-4 to 0.02. Larger timesteps produce larger $\beta_T$ values, which increasingly corrupt the input image. However, a linear scheduler produces high $\beta_T$ values for many timesteps, producing a larger portion of degraded images that are less useful to train with. Nichol & Dhariwal later proposed a cosine noise scheduler that increments $\beta_T$ more gradually to provide more informative data samples, consequently improving image generations. 
 
 <figure class="md-figure">
   <img src="/images/blog/diffusion/schedulers.png" alt="Linear vs. cosine scheduler" />
@@ -35,9 +39,7 @@ $$
 x_t = \sqrt{\bar{\alpha}_t}\, x_0 + \sqrt{1 - \bar{\alpha}_t}\, \epsilon
 \tag{2}
 $$
-where $\epsilon$ is sampled from Gaussian noise. The model then attempts to predict the added noise $\epsilon$ at the current timestep.
-
-How does the model learn how to predict $\epsilon$? The loss term is:
+where $\epsilon$ is sampled from Gaussian noise. The model then attempts to predict the added noise $\epsilon$ at the current timestep. To learn how to predict the added noise $\epsilon$, the model is trained with the loss term:
 
 $$
 L_{\text{simple}}(\theta) := \mathbb{E}_{t, \mathbf{x}_0, \epsilon} \left[ \|\epsilon - \epsilon_\theta(\sqrt{\bar{\alpha}_t}\mathbf{x}_0 + \sqrt{1 - \bar{\alpha}_t}\epsilon, t)\|^2 \right]
@@ -99,7 +101,7 @@ $$
 \mathrm{Attention}(Q, K, V) = \mathrm{softmax}\!\left(\frac{QK^\top}{\sqrt{d_k}}\right)V
 $$
 
-While it is unclear exactly what relationship the self-attention blocks create between pixels of a feature map, they improve denoising because they help the model create relationships between any region of a feature map. Convolutional blocks alone are insufficient for diffusion because they only learn local relationships due to their small kernel sizes.
+While it is unclear exactly what relationship the self-attention blocks create between pixels of a feature map, they improve denoising capabilities because they help the model create relationships between any region of a feature map. Convolutional blocks alone are insufficient for diffusion because they only learn local relationships due to their small kernel sizes.
 
 
 An alternative to the U-Net in diffusion models emerged with Diffusion Transformers (DiTs) (Peebles & Xie, 2022), where a vision transformer (ViT) replaces the U-Net. The flow of a DiT is: compress an input image with a VAE encoder into a latent representation $z$, noise $z$, and patch $z$ with the ViT before performing forward diffusion. The benefit of using a transformer instead of an attention-based UNet is because transformers are more scalable. Larger transformers empirically perform better at diffusion generation than similarly sized UNets (Peebles & Xie, 2022). 
