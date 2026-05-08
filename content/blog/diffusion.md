@@ -24,7 +24,7 @@ $$
 q(\mathbf{x}_t|\mathbf{x}_0) = \mathcal{N}(\mathbf{x}_t; \sqrt{\bar{\alpha}_t}\mathbf{x}_0, (1 - \bar{\alpha}_t)\mathbf{I})
 $$
 
-$\alpha_t$ represents the amount of signal, or non-noise, in the image. Conversely, the intensity of the noise at the current timestep $\beta_T = 1 - \alpha_t$ is controlled by a noise scheduler. Ho et al. utilized a linear noise scheduler, which creates $T$ equally incremented values of $\beta_T$ from 1e-4 to 0.02. Larger timesteps produce larger $\beta_T$ values, which increasingly corrupt the input image. However, a linear scheduler produces high $\beta_T$ values for many timesteps, producing a larger portion of degraded images that are less useful to train with. Nichol & Dhariwal later proposed a cosine noise scheduler that increments $\beta_T$ more gradually to provide more informative data samples, consequently improving image generations. 
+$\alpha_t$ represents the amount of signal, or non-noise, in the image. Conversely, the intensity of the noise at the current timestep $1 - \alpha_t = \beta_T$  is controlled by a noise scheduler. Ho et al. utilized a linear noise scheduler, which creates $T$ equally incremented values of $\beta_T$ from 1e-4 to 0.02. Larger timesteps produce larger $\beta_T$ values, which increasingly corrupt the input image. However, a linear scheduler produces high $\beta_T$ values for many timesteps, producing a larger portion of degraded images that are less useful to train with. Nichol & Dhariwal later proposed a cosine noise scheduler that increments $\beta_T$ more gradually to provide more informative data samples, consequently improving image generations. 
 
 <figure class="md-figure">
   <img src="/images/blog/diffusion/schedulers.png" alt="Linear vs. cosine scheduler" />
