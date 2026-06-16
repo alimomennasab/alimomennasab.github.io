@@ -2,9 +2,22 @@ import type { Metadata } from "next";
 import "katex/dist/katex.min.css";
 import "./globals.css";
 
+const siteUrl = "https://alimomennasab.github.io";
+const siteName = "Ali Momennasab";
+const siteDescription = "Ali Momennasab's personal site";
+
 export const metadata: Metadata = {
-  title: "Ali Momennasab",
-  description: "Ali Momennasab's personal site",
+  metadataBase: new URL(siteUrl),
+  title: siteName,
+  description: siteDescription,
+  applicationName: siteName,
+  openGraph: {
+    title: siteName,
+    description: siteDescription,
+    url: siteUrl,
+    siteName,
+    type: "website",
+  },
   icons: {
     icon: [
       {
@@ -15,6 +28,29 @@ export const metadata: Metadata = {
   },
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      url: siteUrl,
+      name: siteName,
+      description: siteDescription,
+    },
+    {
+      "@type": "Person",
+      "@id": `${siteUrl}/#person`,
+      name: siteName,
+      url: siteUrl,
+      sameAs: [
+        "https://github.com/alimomennasab",
+        "https://www.linkedin.com/in/amomennasab/",
+      ],
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -22,7 +58,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

@@ -40,7 +40,7 @@ const Sidebar: React.FC<SidebarProps> = ({ imageUrl }) => {
       <div className="relative w-full pt-[100%] mt-4 rounded-full overflow-hidden">
         <img
           src={imageUrl}
-          alt="Profile"
+          alt="Ali Momennasab"
           className="absolute top-0 left-0 w-full h-full object-cover rounded-full"
         />
       </div>
