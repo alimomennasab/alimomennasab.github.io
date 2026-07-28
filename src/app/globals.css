@@ -31,3 +31,22 @@ body {
   font-size: 0.9rem;
   color: rgb(87 83 78);
 }
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.prose th,
+.prose td {
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 0.55rem 0.65rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.prose th {
+  background: rgb(0 0 0 / 0.04);
+  font-weight: 600;
+}
