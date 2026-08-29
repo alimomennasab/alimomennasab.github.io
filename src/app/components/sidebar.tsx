@@ -8,36 +8,36 @@ type SidebarProps = {
 const Sidebar: React.FC<SidebarProps> = ({ imageUrl }) => {
   return (
     <div className="flex shrink-0 flex-col w-3/10 justify-start items-end">
-      <h1 className="text-primary-color font-bold text-3xl text-right p-1">
+      <h1 className="text-primary-color font-bold text-4xl text-right p-1">
         <Link href="/" className="text-primary-color hover:font-bold">
           Ali Momennasab
         </Link>
       </h1>
       <Link
         href="/blog"
-        className="text-primary-color font-light text-xl text-right p-1 hover:font-bold"
+        className="text-primary-color font-light text-2xl text-right p-1 hover:underline underline-offset-4"
       >
         Blog
       </Link>
       <Link
         href="/projects"
-        className="text-primary-color font-light text-xl text-right p-1 hover:font-bold"
+        className="text-primary-color font-light text-2xl text-right p-1 hover:underline underline-offset-4"
       >
         Projects
       </Link>
       <Link
         href="/photos"
-        className="text-primary-color font-light text-xl text-right p-1 hover:font-bold"
+        className="text-primary-color font-light text-2xl text-right p-1 hover:underline underline-offset-4"
       >
         Photos
       </Link>
       <Link
         href="/Ali_Momennasab_resume.pdf"
-        className="text-primary-color font-light text-xl text-right p-1 hover:font-bold"
+        className="text-primary-color font-light text-2xl text-right p-1 hover:underline underline-offset-4"
       >
         Resume
       </Link>
-      <div className="relative w-full pt-[100%] mt-4 rounded-full overflow-hidden">
+      <div className="relative w-full pt-[100%] mt-4 rounded-full overflow-hidden border border-black/20">
         <img
           src={imageUrl}
           alt="Ali Momennasab"

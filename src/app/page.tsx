@@ -5,33 +5,34 @@ import Sidebar from './components/sidebar'
 export default function Home() {
   return (
     <div className="min-h-screen w-screen bg-secondary-color flex items-center justify-center p-4">
-      <div className="bg-secondary-color flex flex-col md:flex-row justify-between p-4 w-full max-w-4xl h-auto md:h-[600px] ">
+      <div className="bg-secondary-color flex flex-col md:flex-row md:items-stretch justify-between p-4 w-full max-w-4xl h-auto">
         {/* SIDEBAR */}
         <Sidebar imageUrl="/images/personal_image.jpg" />
         {/* MAIN TEXT */}
-        <div className="border-l border-black pl-14 flex flex-col justify-start w-full md:w-3/5 overflow-hidden mt-4 md:mt-0">
-          <h1 className="text-black text-base md:text-lg mb-4">
-            Hi, I'm Ali! I'm an MSCS student at UCSD. 
-          </h1>
-          <h1 className="text-black text-base md:text-lg mb-4">
-            I'm interested in vision language models and how they produce text/image representations.
-            
-            As a byproduct, I have a growing interest in the mechanistic interpretability
-            of both vision and language models. 
-          </h1>
+        <div className="border-l border-black pl-14 flex flex-col justify-start md:justify-between md:pb-12 w-full md:w-3/5 mt-4 md:mt-0">
+          <p className="text-black text-lg md:text-xl mb-6 md:mb-0">
+            Hi! I&apos;m an MSCS student at UCSD.
+          </p>
+          <p className="text-black text-lg md:text-xl mb-6 md:mb-0">
+            I&apos;m generally interested in vision language models, one-step generation, latent reasoning,
+            and diffusion.
+          </p>
+          <p className="text-black text-lg md:text-xl mb-6 md:mb-0">
+            In my free time, I like playing chess and learning how to play the electric guitar 🎸.
+          </p>
 
           {/* LINKS */}
-          <h1 className="text-black text-base md:text-lg mb-4">
+          <p className="text-black text-lg md:text-xl mb-8 md:mb-0">
             Reach out at <span className="font-bold">amomennasab (at) ucsd (dot) edu</span>. Or,
-
-          </h1>
-          <h1 className="text-black font-bold text-xl md:text-2xl mb-2">Find Me @</h1>
-          <div className="flex flex-row justify-left w-full md:w-1/2 mb-4 gap-4">
+          </p>
+          <div>
+            <h1 className="text-black font-bold text-2xl md:text-3xl mb-2">Find Me @</h1>
+            <div className="flex flex-row justify-left w-full md:w-1/2 mb-4 md:mb-0 gap-4">
             <a
               href="https://github.com/alimomennasab"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary-color text-base md:text-lg hover:underline"
+              className="text-primary-color text-lg md:text-xl hover:underline"
             >
               GitHub 
             </a>
@@ -39,7 +40,7 @@ export default function Home() {
               href="https://www.linkedin.com/in/amomennasab/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary-color text-base md:text-lg hover:underline"
+              className="text-primary-color text-lg md:text-xl hover:underline"
             >
               LinkedIn
             </a>
@@ -47,7 +48,7 @@ export default function Home() {
               href="https://www.chess.com/member/ali_m_123"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary-color text-base md:text-lg hover:underline"
+              className="text-primary-color text-lg md:text-xl hover:underline"
             >
               Chess.com
             </a>
@@ -55,27 +56,12 @@ export default function Home() {
               href="https://www.goodreads.com/user/show/200826158-ali-momennasab"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary-color text-base md:text-lg hover:underline"
+              className="text-primary-color text-lg md:text-xl hover:underline"
             >
               Goodreads
             </a>
+            </div>
           </div>
-          {/* INTERESTS
-          <h1 className="text-black font-bold text-xl md:text-2xl mb-2">Interests</h1>
-          <p className='text-black text-base md:text-lg mb-2'> 
-            Computer vision, vision language models, mechanistic interpretability
-          </p> */}
-
-          {/* CURRENTLY */}
-          <h1 className="text-black font-bold text-xl md:text-2xl mb-2">Currently</h1>
-          <ul className="list-disc list-inside">
-            <li className="text-black text-base md:text-lg">
-              researching at the Cardiac Vision Lab at UCSF & the Kosaraju Lab at Cal Poly Pomona
-            </li>
-            <li className="text-black text-base md:text-lg">
-              learning how to play the electric guitar!
-            </li>
-          </ul>
         </div>
       </div>
     </div>

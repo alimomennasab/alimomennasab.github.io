@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
+import { IBM_Plex_Mono } from "next/font/google";
 import "katex/dist/katex.min.css";
 import "./globals.css";
+
+const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["300", "400", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-ibm-plex-mono",
+});
 
 const siteUrl = "https://alimomennasab.github.io";
 const siteName = "Ali Momennasab";
@@ -57,7 +65,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={ibmPlexMono.variable}>
       <body className="font-sans antialiased">
         <script
           type="application/ld+json"
